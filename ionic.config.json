@@ -1,0 +1,7 @@
+{
+  "name": "FriendsMap",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
