@@ -1,0 +1,56 @@
+<ion-content *ngFor="let profils of profil">
+    <div class="back" (click)="navToMap()"> 
+        <ion-icon name="chevron-up-outline"></ion-icon>
+    </div>
+    <div class="profil">
+        <img src="{{profils.img}}" alt="img">
+    </div>
+    <div class="name">
+        <p>{{profils.prenom}} {{profils.nom}}</p>
+        <h5>#{{profils.id}}</h5>
+    </div>
+    <div class="row">
+        <div class="groupe">
+            <ion-icon name="bicycle"></ion-icon>
+            <div class="descr">
+                <h3>{{profils.distance}}m</h3>
+                <p>Distance parcourue</p>
+            </div>
+        </div>
+        <div class="groupe">
+            <ion-icon name="location"></ion-icon>
+            <div class="descr">
+                <h3>{{profils.events}}</h3>
+                <p>Evènements</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="groupe">
+            <ion-icon name="today"></ion-icon>
+            <div class="descr">
+                <h3>{{profils.creatorEvent}} fois</h3>
+                <p>Créateur d'évènements</p>
+            </div>
+        </div>
+        <div class="groupe">
+            <ion-icon name="person"></ion-icon>
+            <div class="descr">
+                <h3>{{profils.friends}}</h3>
+                <p>Amis</p>
+            </div>
+        </div>
+    </div>
+    <div class="row2">
+        <div class="groupe">
+            <ion-icon name="people"></ion-icon>
+            <div class="descr">
+                <h3>{{profils.recordInvites}}</h3>
+                <p>Record d'invités</p>
+            </div>
+        </div>
+    </div>
+    <div class="deconnect" (click)="navToHome()">
+        <p>Se déconnecter</p>
+    </div>
+</ion-content>

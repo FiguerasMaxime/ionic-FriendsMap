@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'MtBold';
+    src: url("./../../assets/Montserrat/Montserrat-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'MtMedium';
+    src: url("./../../assets/Montserrat/Montserrat-Medium.ttf");
+}
+
+
+.modal {
+    padding: 40px;
+
+    .row1 {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+        h2, p {
+            padding: 0;
+            margin: 0;
+
+        }
+
+        p {
+            font-family: 'MtMedium';
+            font-size: 10px;
+        }
+    }
+
+    .row2{
+        margin-top: 30px;
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        .col{
+            display: flex;
+
+            span{
+                padding: 0 7px;
+                font-family: 'MtBold';
+                color: white;
+                font-size: 13px;
+            }
+        }
+    }
+
+    h2 {
+        font-family: 'MtBold';
+        font-size: 14px;
+    }
+    .invited {
+        display: flex;
+        width: 100vh;
+
+        .person {
+            box-sizing: border-box;
+            background-color: white;
+            padding: 10px;
+            border-radius: 20px;
+            margin-right: 20px;
+            text-align: center;
+            width: 80px;
+            color: #FF0D5E;
+
+            h3{
+                font-family: 'MtBold';
+                font-size: 12px;
+                margin: 0;
+            }
+
+            p{
+                font-family: 'MtMedium';
+                font-size: 9px;
+                margin: 0;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .finish {
+        margin-top: 30px;
+
+        ion-button {
+            --border-radius: 50px;
+            text-transform: uppercase;
+            --background: #FF0D5E;
+            --color: white;
+            font-family: 'MtMedium';
+            font-size: 15px;
+        }
+    }
+}

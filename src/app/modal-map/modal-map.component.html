@@ -1,0 +1,31 @@
+<div class="modal">
+  <div class="row1">
+    <img src="./../../assets/cursor.svg" alt="cursor">
+    <div class="infos">
+      <h2>Soirée anniversaire !</h2>
+      <p>12 rue des Abesses</p>
+    </div>  
+    <img src="./../../assets/pen.svg" alt="pen">
+  </div>
+  <div class="row2">
+    <div class="col">
+      <img src="./../../assets/run.svg" alt="run">
+      <span>44m</span>
+    </div>
+    <div class="col">
+      <img src="./../../assets/clock.svg" alt="clock">
+      <span>11h23</span>
+    </div>
+  </div>
+  <h2>Invités</h2>
+  <div class="invited">
+    <div class="person" *ngFor="let invite of invites">
+        <img src="{{invite.src}}" alt="">
+        <h3>{{invite.nom}}</h3>
+        <p>{{invite.prenom}}</p>
+    </div>
+  </div>
+  <div class="finish" (click)="finish()">
+    <ion-button expand="block">Finir l'évènement</ion-button>
+  </div>
+</div>

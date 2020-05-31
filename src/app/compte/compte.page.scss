@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'MtBold';
+    src: url("./../../assets/Montserrat/Montserrat-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'MtMedium';
+    src: url("./../../assets/Montserrat/Montserrat-Medium.ttf");
+}
+
+ion-content {
+    --background : #20276E;
+
+    .back{
+        width: 100%;
+        margin-top: 7vh;
+        display: flex;
+        justify-content: center;
+        ion-icon{
+            transform: scale(1.5,1.5);
+            color: #FF0D5E;
+        }
+    }
+
+    .profil {
+        width: 80%;
+        margin: 30px auto;
+        display: flex;
+        justify-content: center;
+
+        img{
+            height: 100%;
+        }
+    }
+
+    .name{
+        text-align: center;
+
+        p{
+            font-size: 16px;
+            font-family: 'MtBold';
+            color: white;
+
+        }
+
+        h5{
+            font-size: 13px;
+            font-family: 'MtMedium';
+            color: #FF0D5E;
+            margin-top: 5px;
+
+        }
+
+    }
+    
+    .row{
+        width: 80%;
+        margin: 70px auto;
+        display: flex;
+        justify-content: space-between;
+
+        .groupe{
+            width: 40%;
+            display: flex;
+            align-items: center;
+
+            ion-icon{
+                color: #FF0D5E;
+                margin-right: 5px;
+            }
+            h3{
+                font-size: 13px;
+                font-family: 'MtBold';
+                color: white;
+            }
+            p{
+                font-size: 10px;
+                font-family: 'MtMedium';
+                color: white;
+                opacity: 0.5;
+            }
+        }
+    }
+
+    .row2{
+        width: 80%;
+        margin: 70px auto;
+
+        .groupe{
+            width: 40%;
+            display: flex;
+            align-items: center;
+
+            ion-icon{
+                color: #FF0D5E;
+                margin-right: 5px;
+            }
+            h3{
+                font-size: 13px;
+                font-family: 'MtBold';
+                color: white;
+            }
+            p{
+                font-size: 10px;
+                font-family: 'MtMedium';
+                color: white;
+                opacity: 0.5;
+            }
+        }
+    }
+
+    .deconnect {
+        text-align: center;
+        font-size: 15px;
+        color: #2172FF;
+        font-family: 'MtBold';
+    }
+}

@@ -1,17 +1,19 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="header">
+    <div class="compte" (click)="navToCompte()"></div>
+    <ion-icon name="search-sharp"></ion-icon>
+  </div>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <div class="user1">
+    <img src="./../../assets/user1.svg" alt="user1">
+  </div>
+  <div class="user2">
+    <img src="./../../assets/user2.svg" alt="user2">
+  </div>
+
+  <div class="cursor" id="cursor" (click)= "presentModal()">
+    <img src="./../../assets/cursor.svg" alt="cursor">
+  </div>
+
+  <ion-icon name="car-sport-sharp"></ion-icon>
 </ion-content>

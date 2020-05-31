@@ -1,0 +1,81 @@
+@keyframes bounce{
+    from {transform: translateY(-20px);}
+    50%  {transform: translateY(0);}
+    to   {transform: translateY(-20px);}
+}
+
+@keyframes car{
+    from {
+        transform: translate(0, 0);
+
+    }
+    20%{
+        transform: translate(170px, 90px);
+    }
+    40%{
+        transform: translate(210px, 30px);
+    }
+    70%{
+        transform: translate(400px, 100px);
+    }
+    to{
+        transform: translate(500px, 100px);
+    }
+
+}
+
+
+ion-content{
+    --background: url('./../../assets/map-fond.png');
+    transform: scale(1);
+
+    .header{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 30px;
+        margin-top: 5vh;
+
+        .compte{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-image: url('./../../assets/logo-compte.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+
+    .cursor {
+        position: absolute;
+        top: 45%;
+        left: 54%;
+        animation: bounce 0.7s ease infinite;        
+    }
+
+    ion-icon{
+        position: absolute;
+        top: 57%;
+        left: -30px;
+        transform: rotate(50deg);
+        animation: car 10s linear infinite;
+    }
+
+    .user1{
+        position: absolute;
+        top: 20%;
+        left: 25%;
+    }
+
+    .user2{
+        position: absolute;
+        top: 13%;
+        left: 36%;
+    }
+    
+}
+
+.clicked{
+    transform: scale(1.4);
+    transition: all .7s ease;
+}
